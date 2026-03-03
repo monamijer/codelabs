@@ -63,10 +63,12 @@ Si vous souhaitez explorer les exercices localement sur votre machine :
 
 ```bash
 # Cloner le dépôt
-git clone [https://github.com/monamijer/codelabs.git](https://github.com/monamijer/codelabs.git)
+git clone https://github.com/monamijer/codelabs.git
 
 # Entrer dans le dossier
 cd codelabs
 
 # Explorer les fichiers (ou ouvrez avec nvim)
 ls -R
+```
+Fais avec passion par Monami Jerome
