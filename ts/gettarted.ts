@@ -1,14 +1,13 @@
 type Color= 'blue'|'red'|'yellow'
+interface PonyModel{
+	name: string;
+	speed: number;
+}
 
-const ponyNumber: number = 0;
-
-const ponyName : string = 'Victorine';
-const ponyColor: Color = 'blue';
-const ponies: number = 'bonjour';
-
+const pony: PonyModel = { name: 'Victorine', speed: 43}
 function startRace(value: String): String{
 	
 	return value.toLowerCase();
 }
 
-console.log(ponyName, ponyColor);
+console.log(pony);
