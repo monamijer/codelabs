@@ -1,0 +1,1 @@
+{"version":3,"file":"uniontypeandguards2.js","sourceRoot":"","sources":["uniontypeandguards2.ts"],"names":[],"mappings":"AAiBA,SAAS,cAAc,CAAC,IAAU;IAChC,QAAO,IAAI,CAAC,IAAI,EAAC,CAAC;QACnB,KAAK,eAAe;YACnB,OAAO,IAAI,CAAC,WAAW,CAAC;QACzB,KAAK,WAAW;YACf,OAAO,IAAI,CAAC,YAAY,CAAC;QAC1B,KAAK,OAAO;YACX,OAAO,IAAI,CAAC,UAAU,CAAC;IACvB,CAAC;AACH,CAAC"}

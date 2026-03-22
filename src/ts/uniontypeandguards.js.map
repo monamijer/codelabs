@@ -1,0 +1,1 @@
+{"version":3,"file":"uniontypeandguards.js","sourceRoot":"","sources":["uniontypeandguards.ts"],"names":[],"mappings":"AAYA,SAAS,cAAc,CAAC,IAAU;IAChC,IAAG,IAAI,CAAC,IAAI,KAAK,eAAe,EAAC,CAAC;QACnC,OAAQ,IAA0B,CAAC,WAAW,CAAC;IAC9C,CAAC;SAAK,IAAG,IAAI,CAAC,IAAI,KAAK,WAAW,EAAC,CAAC;QACrC,OAAQ,IAAsB,CAAC,YAAY,CAAC;IAC3C,CAAC;IACD,OAAO,CAAC,CAAC;AACX,CAAC"}
