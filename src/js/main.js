@@ -1,11 +1,11 @@
 class Pony extends HTMLElement{
   constructor(){
 	super();
+	  const template = document.querySelector('#pony-template');
+	  const clone = document.importNode(template.content, true)
+	  
 	  const shadow = this.attachShadow({ mode: 'open' });
-	  const title = document.createElement('h1');
-	  title.textContent = 'General Solda, a great fighter';
-
-	  shadow.appendChild(title);
+	  shadow.appendChild(clone);
 	  console.log('this component work');
   }
 
