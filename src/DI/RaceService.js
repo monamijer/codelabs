@@ -1,9 +1,21 @@
-var RaceList = /** @class */ (function () {
-    function RaceList(raceService) {
-        var _this = this;
-        this.races = [];
-        this.raceService = raceService;
-        this.raceService.list().then(function (races) { return (_this.races = races); });
+class RaceService {
+    name;
+    age;
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
     }
-    return RaceList;
-}());
+    list() {
+        console.log('hello everyone');
+    }
+}
+class RaceList {
+    raceService;
+    races = [];
+    constructor(raceService) {
+        this.raceService = raceService;
+        this.raceService.list().then((races) => (this.races = races));
+    }
+}
+export {};
+//# sourceMappingURL=RaceService.js.map
