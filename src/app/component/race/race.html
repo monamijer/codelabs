@@ -1,0 +1,10 @@
+
+<button (click)=refreshPonies()> Refresh </button>
+<button class="btn"> my preferred color is always </button>
+<ul>
+  @for(pony of ponies(); track $index){
+    <li [style.background]="$even? 'gray': 'white'">{{ pony.name }}</li>
+  }
+</ul>
+<button class="btn" (click)="selectMe()">select me</button>
+
