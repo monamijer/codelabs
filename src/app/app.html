@@ -2,7 +2,8 @@
 <p [textContent]="user().name"></p>
 <p> {{ formattedSpeed | json }}</p>
 <button (click)="refresh()"> refresh the races list </button>
-
+<a [routerLink]="['admin']">Admin </a>
+<a [routerLink]="['register']">register</a>
 <p>{{ races() }} races</p>
 <textarea (keydown.space)="onSpacePress()">press space!</textarea>
 <div>
