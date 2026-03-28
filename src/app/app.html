@@ -1,11 +1,7 @@
-<h1 [textContent]="title()" [style]="dynamicStyle()"></h1>
-<p [textContent]="user().name"></p>
-<p> {{ formattedSpeed | json }}</p>
-<button (click)="refresh()"> refresh the races list </button>
+<h1> Welcome on Codelabs</h1>
 <a [routerLink]="['admin']">Admin </a>
+<br/>
 <a [routerLink]="['register']">register</a>
-<p>{{ races() }} races</p>
-<textarea (keydown.space)="onSpacePress()">press space!</textarea>
 <div>
     @if(races()){
         <h2> no races found </h2>

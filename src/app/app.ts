@@ -18,7 +18,7 @@ interface RaceModel{
 
 @Component({
   selector: 'ns-root',
-  imports: [RouterOutlet, Race, JsonPipe, RouterLink],
+  imports: [RouterOutlet, Race, RouterLink],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
