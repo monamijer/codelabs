@@ -1,1 +1,12 @@
-<p>register works!</p>
+<h2> Sign up</h2>
+<form (ngSubmit)='register()'>
+  <div>
+    <label for="">username:</label>
+    <input name="username" ngModel>
+  </div>
+  <div>
+    <label for="">Password:</label>
+    <input type="password" name="password" ngModel>
+  </div>
+<button type="submit">register</button>
+</form>

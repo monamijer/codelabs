@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'ns-register',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './register.html',
   styleUrl: './register.css',
 })
-export class Register {}
+export class Register {
+  protected register(): void{}
+
+}
