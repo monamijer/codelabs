@@ -1,5 +1,5 @@
 import { Component, computed, inject, input, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { Race } from './component/race/race';
 import { formatNumber, JsonPipe } from '@angular/common';
 import { Meta, Title } from '@angular/platform-browser';
@@ -18,7 +18,7 @@ interface RaceModel{
 
 @Component({
   selector: 'ns-root',
-  imports: [RouterOutlet, Race, JsonPipe],
+  imports: [RouterOutlet, Race, JsonPipe, RouterLink],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
