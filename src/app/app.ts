@@ -3,6 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import { Race } from './component/race/race';
 import { formatNumber, JsonPipe } from '@angular/common';
 import { Meta, Title } from '@angular/platform-browser';
+import { Observable } from 'rxjs';
+import { toObservable } from '@angular/core/rxjs-interop';
 
 interface PonyModel{
   id: number;
@@ -28,6 +30,7 @@ constructor(){
   inject(Meta).addTag({ name: 'monami', content: 'my code library'});
 
 }
+ protected readonly myTitle$: Observable<string> = toObservable(this.title);
   protected readonly formattedSpeed = computed(()=>
     formatNumber(this.user().age, 'en-US', '.2')
   )
