@@ -1,12 +1,22 @@
 <h2> Sign up</h2>
-<form (ngSubmit)='register(userForm.value)' #userForm="ngForm">
+<form (ngSubmit)='register()' [formGroup]='userForm'>
   <div>
     <label for="">username:</label>
-    <input name="username" ngModel>
+    <input formControlName='username'>
+    @if(userNameCtrl.touched && userNameCtrl.hasError('required')){
+    <span class='' style="color:red; font-weight: bolder;"> *username is required</span>
+    }
+    @if(userNameCtrl.touched && userNameCtrl.hasError('minlength')){
+    <span class='' style="color:red; font-weight: bolder;"> *Username should be 3 characters min</span>
+    }
   </div>
   <div>
     <label for="">Password:</label>
-    <input type="password" name="password" ngModel>
+    <input type="password" formControlName='password'>
+    @if(passwordCtrl.touched && passwordCtrl.hasError('required')){
+    <span class='' style='color:red; font-weight: bolder;'> *Password is required</span>
+    }
+
   </div>
-<button type="submit">register</button>
+<button type="submit" [disabled]="userForm.invalid">register</button>
 </form>
