@@ -1,5 +1,5 @@
 <h2> Sign up</h2>
-<form (ngSubmit)='register()'>
+<form (ngSubmit)='register(userForm.value)' #userForm="ngForm">
   <div>
     <label for="">username:</label>
     <input name="username" ngModel>

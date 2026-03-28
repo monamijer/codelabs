@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './register.css',
 })
 export class Register {
-  protected register(): void{}
+  protected register(user: { username: string; password: string }): void{
+    console.log(user);
+  }
 
 }
