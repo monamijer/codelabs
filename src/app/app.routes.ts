@@ -7,6 +7,6 @@ import { EditPackingList } from './edit-packing-list/edit-packing-list';
 export const routes: Routes = [
   {path: 'admin', component: Admin},
   {path: 'register', component: Register},
-  {path: 'blog', component: Editblog}
+  {path: 'blog', component: Editblog},
   {path: 'packlist', component: EditPackingList}
 ];
