@@ -1,6 +1,8 @@
 import { Component, inject, signal } from '@angular/core';
 import { AbstractControl, FormBuilder, FormsModule, ReactiveFormsModule, ValidationErrors, Validators } from '@angular/forms';
 import { UserModel } from '../models/usermodel';
+import { debounceTime, distinctUntilChanged } from 'rxjs';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'ns-register',
@@ -17,6 +19,18 @@ export class Register {
   protected readonly confirmCtrl  = this.fb.control('', Validators.required);
   protected readonly birthdateCtrl= this.fb.control('', [Validators.required, Register.isOldEnough]);
 
+  //protected readonly computePasswordStrength = signal();
+
+ // protected readonly passwordStrength = toSignal(
+//    this.passwordCtrl.valueChanges
+//      .pipe(
+//        debounceTime(400),
+//        distinctUntilChanged(),
+//        map(newValue => this.computePasswordStrength(newValue))
+//      ),
+//      { initialValue: 0 }
+//  );
+
   protected readonly passwordGroup = this.fb.group(
     { password: this.passwordCtrl, confirm: this.confirmCtrl},
     { validators: Register.passwordMatch}
@@ -26,7 +40,11 @@ export class Register {
     username: this.userNameCtrl,
     passwordForm: this.passwordGroup,
     birthdate:this.birthdateCtrl
-  })
+  },
+    {
+      updateOn: 'submit'
+    }
+  )
 
   private static isOldEnough(control: AbstractControl<string>): ValidationErrors | null{
     const birthDatePlus18 = new Date(control.value);
