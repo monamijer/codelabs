@@ -1,0 +1,11 @@
+<h2>Blog</h2>
+<div formArrayName='tags'>
+  <p>Tags</p>
+  <button id='add-tag' (click)=addTag()>Add tag</button>
+  @for(tagControl of tagsArray.controls; track tagControl){
+    <div>
+      <input class="tag" [formControlName]='$index'>
+      <button class="remove-tag" (click)='removeTag($index)'>Remove Tag</button>
+    </div>
+  }
+</div>
