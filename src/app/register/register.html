@@ -4,12 +4,13 @@
   <div>
     <label for="">username:</label>
     <input formControlName='username'>
-    @if(userNameCtrl.touched && userNameCtrl.hasError('required')){
-    <span class='errors'> *username is required</span>
-    }
-    @if(userNameCtrl.touched && userNameCtrl.hasError('minlength')){
-    <span class='errors'> *Username should be 3 characters min</span>
-    }
+    <!--
+    <val-errors controlName='username'>
+      <ng-template valErrors='required'>The username is required</ng-template>
+      <ng-template valErrors='username'>The username must be there</ng-template>
+
+    </val-errors>
+  -->
   </div>
 
   <div formGroupName='passwordForm'>
