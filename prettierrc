@@ -1,0 +1,20 @@
+{
+  "printWidth": 140,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "arrowParens": "avoid",
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "angular"
+      }
+    },
+    {
+      "files": "index.html",
+      "options": {
+        "parser": "html"
+      }
+    }
+  ]
+}
