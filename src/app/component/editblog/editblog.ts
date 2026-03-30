@@ -14,12 +14,12 @@ export class Editblog {
   protected readonly blogPostForm = this.fb.group({
     title: '',
     content: '',
-    tags: this.tagsArray
+    tags: this.tagsArray,
   });
-  protected addTag(){
+  protected addTag() {
     this.tagsArray.push(this.fb.control(''));
   }
-  protected removeTag(index: number){
+  protected removeTag(index: number) {
     this.tagsArray.removeAt(index);
   }
 }

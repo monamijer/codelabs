@@ -1,6 +1,6 @@
-import { WritableSignal } from "@angular/core";
+import { WritableSignal } from '@angular/core';
 
-export interface UserModel{
+export interface UserModel {
   username: WritableSignal<string>;
   password: WritableSignal<string>;
 }

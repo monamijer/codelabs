@@ -1,18 +1,18 @@
-<h1> Welcome on Codelabs</h1>
+<h1>Welcome on Codelabs</h1>
 <a [routerLink]="['admin']">Admin </a>
-<br/>
+<br />
 <a [routerLink]="['register']">register</a>
-<br/>
+<br />
 <a [routerLink]="['blog']">blog</a>
-<br/>
+<br />
 <a [routerLink]="['packlist']">packs</a>
 <div>
-    @if(races()){
-        <h2> no races found </h2>
-    }@else{
-        <h2> yay, we have one man </h2>
-    }
+  @if(races()){
+  <h2>no races found</h2>
+  }@else{
+  <h2>yay, we have one man</h2>
+  }
 </div>
 <!-- <ns-race color="blue"></ns-race> -->
-<ns-race [ponyModel]='ponyModel()' (activated)='betOnPony($event)'></ns-race>
+<ns-race [ponyModel]="ponyModel()" (activated)="betOnPony($event)"></ns-race>
 <router-outlet></router-outlet>

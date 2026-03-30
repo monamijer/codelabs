@@ -11,15 +11,15 @@ import { NonNullableFormBuilder } from '@angular/forms';
 export class EditPackingList {
   private readonly fb = inject(NonNullableFormBuilder);
   protected readonly equipmentRecord = this.fb.record({
-    toothbrush : true
+    toothbrush: true,
   });
   protected readonly packingListForm = this.fb.group({
-    equipments: this.equipmentRecord
+    equipments: this.equipmentRecord,
   });
-  protected addEquipment(equipment: string){
+  protected addEquipment(equipment: string) {
     this.equipmentRecord.addControl(equipment, this.fb.control(true));
   }
-  protected removeEquipment(equipment: string){
+  protected removeEquipment(equipment: string) {
     this.equipmentRecord.removeControl(equipment);
   }
 }

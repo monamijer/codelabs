@@ -1,9 +1,7 @@
-input.ng-invalid.ng-dirty{
+input.ng-invalid.ng-dirty {
   border: 3px red solid;
 }
-.errors{
+.errors {
   color: red;
   font-weight: bolder;
-
-
 }
