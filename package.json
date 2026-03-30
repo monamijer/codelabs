@@ -29,13 +29,14 @@
     "@angular/cli": "21.2.4",
     "@angular/compiler-cli": "21.2.6",
     "@angular/localize": "21.2.6",
+    "@eslint/js": "^10.0.1",
     "@playwright/test": "1.58.2",
     "@vitest/browser-playwright": "4.1.2",
     "@vitest/coverage-v8": "4.1.2",
     "@vitest/eslint-plugin": "1.6.13",
     "@vitest/ui": "4.1.2",
     "angular-eslint": "21.3.1",
-    "eslint": "9.39.4",
+    "eslint": "^10.0.3",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-prettier": "5.5.5",
     "ng2ninja": "7.0.0",
@@ -43,7 +44,7 @@
     "playwright-ng-schematics": "21.0.9",
     "prettier": "3.8.1",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.57.2",
+    "typescript-eslint": "8.56.1",
     "vitest": "4.1.2"
   }
 }
