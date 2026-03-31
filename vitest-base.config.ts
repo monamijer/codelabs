@@ -5,6 +5,9 @@ export default defineConfig({
     testTimeout: 5000,
     hookTimeout: 5000,
     browser: {
+	  enabled: true,
+	  name: 'chromium',
+	  provider: 'playwright',
       screenshotFailures: false
     },
     expect: {

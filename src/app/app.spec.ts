@@ -13,6 +13,6 @@ describe('App', () => {
   it('should have a title', async () => {
     const tester = new AppTester();
 
-    await expect.element(tester.title).toHaveTextContent('Ponyracer');
+   await expect.element(tester.title).toHaveTextContent('Ponyracer');
   });
 });
