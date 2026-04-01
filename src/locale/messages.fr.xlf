@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="home.title" datatype="html">
+        <source> Welcome to Ponyracer</source>
+        <target>Bienvenue sur Ponyracer</target>
+      </trans-unit>
+      <trans-unit id="home.startMessage" datatype="html">
+        <source>Let&apos;s start playing.</source>
+        <target>Commencons le jeu</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

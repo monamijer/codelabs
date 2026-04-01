@@ -14,6 +14,12 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "ns",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "fr": "src/locale/messages.fr.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular/build:application",
@@ -49,15 +55,21 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
-            }
+            },
+          "fr": {
+            "localize": ["fr"]
+          }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "production",
         },
         "serve": {
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
               "buildTarget": "codelabs:build:production"
+            },
+            "fr": {
+              "buildTarget": "codelabs:build:fr"
             },
             "development": {
               "buildTarget": "codelabs:build:development"
