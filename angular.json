@@ -52,9 +52,9 @@
               "outputHashing": "all"
             },
             "development": {
-              "optimization": false,
-              "extractLicenses": false,
-              "sourceMap": true
+              "optimization": true,
+              "extractLicenses": true,
+              "sourceMap": false
             },
           "fr": {
             "localize": ["fr"]
