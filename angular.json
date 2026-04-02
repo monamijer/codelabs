@@ -52,15 +52,15 @@
               "outputHashing": "all"
             },
             "development": {
-              "optimization": true,
-              "extractLicenses": true,
-              "sourceMap": false
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
             },
           "fr": {
             "localize": ["fr"]
           }
           },
-          "defaultConfiguration": "production",
+          "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular/build:dev-server",
