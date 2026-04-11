@@ -1,12 +1,13 @@
-import {defineConfig} from "vite";
-import react from "@vitejs/plugin-react";
+// vite.config.js
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-	plugins: [react()],
-	base: "/codelabs",
-	build: {
-	  outDir: "dist",
-	  emptyOutDir: true
-	}
+  // GitHub Pages deploys to /portfolio/ — adjust if your base path differs
+  base: '/portfolio/',
 
-})
+  build: {
+    outDir: 'dist',
+    // Clean output on every build
+    emptyOutDir: true,
+  },
+});

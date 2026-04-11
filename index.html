@@ -1,22 +1,75 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>my vite page</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
-    <script src="main.jsx" type="module"></script>
-    <link rel="stylesheet" href="style.css" media="all" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta name="description" content="Monami Jerome — Web Developer & Designer based in Bujumbura, Burundi" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Monami Jerome · Web Developer" />
+    <meta property="og:description" content="Discover Monami Jerome's projects and skills" />
+    <meta property="og:image" content="images/jer.jpg" />
+    <meta property="og:url" content="https://monamijer.github.io/portfolio" />
+
+    <title>Monami Jerome · Web Developer</title>
+
+    <!-- Fonts: Playfair Display (display) + DM Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/jer.ico" type="image/x-icon" />
+
+    <!-- Entry point — type="module" enables ES modules -->
+    <script src="js/main.js" type="module"></script>
   </head>
+
   <body>
-    <header>
-      <h1>Monami jerome</h1>
-    </header>
-    <main>
-      <section>
-        <h2>Warning...</h2>
-        <p>site under maintenance</p>
-      </section>
-      <aside id="root"></aside>
-    </main>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <!-- ── NAV ── -->
+    <nav id="nav" aria-label="Main navigation">
+      <a href="#/" class="nav-logo" data-link>MJ</a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#/about"    data-link>About</a></li>
+        <li><a href="#/services" data-link>Services</a></li>
+        <li><a href="#/projects" data-link>Projects</a></li>
+        <li><a href="#/skills"   data-link>Skills</a></li>
+        <li><a href="#/contact"  data-link>Contact</a></li>
+      </ul>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- ── ROUTER OUTLET ── -->
+    <main id="main-content" class="view-container"></main>
+
+    <!-- ── FOOTER ── -->
+    <footer id="footer">
+      <div class="footer-inner">
+        <span class="footer-name">Monami Jerome</span>
+        <div class="footer-socials">
+          <a href="https://github.com/monamijer"    aria-label="GitHub"   target="_blank" rel="noopener">GH</a>
+          <a href="https://www.linkedin.com/in/monami-j%C3%A9r%C3%B4me-025038275/" aria-label="LinkedIn" target="_blank" rel="noopener">LI</a>
+          <a href="https://x.com/JeromeMonami"      aria-label="Twitter"  target="_blank" rel="noopener">TW</a>
+        </div>
+        <span class="footer-copy">© <span id="year"></span></span>
+      </div>
+    </footer>
   </body>
 </html>
